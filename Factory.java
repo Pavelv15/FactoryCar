@@ -27,6 +27,6 @@ public class Factory {
         }
         System.out.println("Нет технической возможности изготовить "+ titleCar);
         return null;
-
+//Тест
     }
 }
