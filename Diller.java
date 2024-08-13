@@ -13,6 +13,7 @@ public class Diller
     void  createOrder(Order order) {
         order.start();
         order.showInfoOrder();
+        order.chekModels();
 
     }
 }
