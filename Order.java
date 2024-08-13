@@ -8,7 +8,7 @@ public class Order {
     private String models[];
     private int priceOrder = 0;
     private int age;
-
+    private int countModel;
     /**
      *
      * @param id номер заказа
@@ -59,5 +59,19 @@ public class Order {
 
         System.out.println("Общая стоимость заказа " + priceOrder);
     }
+
+    /**
+     * Метод подсчёта количества моделей
+     */
+    void chekModels() {
+        for(int i =0;i < models.length; i++) {
+            countModel = 0;
+            for (int j = 0; j < cars.length; j++)
+                if(models[i].equalsIgnoreCase(cars[j].getTitle())) {
+                    countModel++;
+                }
+            System.out.println("Всего " + models[i] + " сделано  " + countModel);
+        }
+    }
 }
-//Нужно сделать метод по подсчёту количесвто моделей
+
